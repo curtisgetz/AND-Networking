@@ -8,14 +8,14 @@ public class Earthquake {
 
 
 
-    private String quake_mag;
+    private double quake_mag;
     private String quake_city;
     //private String quake_date;
     private long mTimeInMilliseconds;
 
 
 
-    public Earthquake(String eqMag, String eqCity, long timeInMilliseconds)
+    public Earthquake(double eqMag, String eqCity, long timeInMilliseconds)
     {
         quake_mag = eqMag;
         quake_city = eqCity;
@@ -25,7 +25,7 @@ public class Earthquake {
 
 
 
-    public String getQuake_mag() {return quake_mag;}
+    public double getQuake_mag() {return quake_mag;}
 
     public String getQuake_city() {return quake_city;}
 

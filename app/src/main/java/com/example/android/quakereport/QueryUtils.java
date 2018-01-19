@@ -62,7 +62,8 @@ public final class QueryUtils {
                 JSONObject jsonQuake = jsonFeaturesArray.getJSONObject(i);
                 JSONObject jsonProperties = jsonQuake.getJSONObject("properties");
 
-                String mag = jsonProperties.getString("mag");
+//                String mag = jsonProperties.getString("mag");
+                double mag = jsonProperties.getDouble("mag");
                 String place = jsonProperties.getString("place");
                 //String time = jsonProperties.optString("time");
                 long timeInMilliseconds = jsonProperties.getLong("time");
