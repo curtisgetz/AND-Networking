@@ -54,7 +54,7 @@ public class EarthquakeAdapter extends ArrayAdapter<Earthquake> {
         // Set the proper background color on the magnitude circle.
         // Fetch the background from the TextView, which is a GradientDrawable.
         GradientDrawable magnitudeCircle = (GradientDrawable) magTextView.getBackground();
-//TODO
+//
         // Get the appropriate background color based on the current earthquake magnitude
         int magnitudeColor = getMagnitudeColor(currentEarthquake.getQuake_mag());
 
