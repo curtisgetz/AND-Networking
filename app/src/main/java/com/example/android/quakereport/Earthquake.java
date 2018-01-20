@@ -12,15 +12,17 @@ public class Earthquake {
     private String quake_city;
     //private String quake_date;
     private long mTimeInMilliseconds;
+    private String quake_url;
 
 
 
-    public Earthquake(double eqMag, String eqCity, long timeInMilliseconds)
+    public Earthquake(double eqMag, String eqCity, long timeInMilliseconds, String eqUrl)
     {
         quake_mag = eqMag;
         quake_city = eqCity;
         //quake_date = eqDate;
         mTimeInMilliseconds = timeInMilliseconds;
+        quake_url = eqUrl;
     }
 
 
@@ -32,5 +34,7 @@ public class Earthquake {
     //public String getQuake_date() {return quake_date;}
 
     public long getTimeInMilliseconds() {return mTimeInMilliseconds;}
+
+    public String getQuake_url() {return  quake_url;}
 
 }

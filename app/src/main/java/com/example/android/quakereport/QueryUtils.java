@@ -65,13 +65,15 @@ public final class QueryUtils {
 //                String mag = jsonProperties.getString("mag");
                 double mag = jsonProperties.getDouble("mag");
                 String place = jsonProperties.getString("place");
+                // Extract the value for the key called "url"
+                String url = jsonProperties.getString("url");
                 //String time = jsonProperties.optString("time");
                 long timeInMilliseconds = jsonProperties.getLong("time");
                 //Date dateObject = new Date(timeInMilliseconds);
                 //SimpleDateFormat dateFormatter = new SimpleDateFormat("MMM DD, yyyy");
                // String dateToDisplay = dateFormatter.format(dateObject);
 
-                earthquakes.add(new Earthquake(mag, place, timeInMilliseconds));
+                earthquakes.add(new Earthquake(mag, place, timeInMilliseconds, url));
             }
 
 
